@@ -68,7 +68,7 @@ export default function App() {
           <Button onClick={onAdd}>Add Friend</Button>
         }
       </div>
-      {selected && <SplitForm selected={selected} onSplit={handleSplitBill} />}
+      {selected && <SplitForm selected={selected} onSplit={handleSplitBill} key={selected.id} />}
     </div>
   )
 }
